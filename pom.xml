@@ -25,7 +25,7 @@
     <site>
       <id>site-server</id>
       <name>Test Project Site</name>
-      <url>http://18.223.124.10:8081/nexus/content/repositories/snapshots/</url>
+      <url>http://3.21.126.252:8081/nexus/content/repositories/snapshots/</url>
     </site>
   </distributionManagement>
 
