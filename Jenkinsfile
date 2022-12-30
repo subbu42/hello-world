@@ -20,7 +20,8 @@ pipeline {
     stage ('DEV Deploy') {
       steps {
       echo "deploying to tomcat "
-     deploy adapters: [tomcat8(credentialsId: 'b985a944-79e6-48bb-9349-57f24de9c433', path: '', url: 'http://3.110.132.162:8090/')], contextPath: 'scmpoc', war: '**/*war'
+//      deploy adapters: [tomcat8(credentialsId: 'b985a944-79e6-48bb-9349-57f24de9c433', path: '', url: 'http://3.110.132.162:8090/')], contextPath: 'scmpoc', war: '**/*war'
+    deploy adapters: [tomcat8(credentialsId: 'ed0e887b-724f-4f9c-82af-a13136e42698', path: '', url: 'http://172.31.32.19:8080')], contextPath: 'helloworld', war: '**/*.war'
       }
     }
   }
